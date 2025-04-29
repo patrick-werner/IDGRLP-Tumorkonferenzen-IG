@@ -3,14 +3,14 @@
   "id" : "StatusBildbefundVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet StatusBildbefundVS</b></p><a name=\"StatusBildbefundVS\"> </a><a name=\"hcStatusBildbefundVS\"> </a><a name=\"StatusBildbefundVS-en-US\"> </a><ul><li>Include these codes as defined in <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>nichtVorhanden</td><td>nicht vorhanden</td></tr><tr><td>eingelesen</td><td>sind eingelesen</td></tr><tr><td>noch-nicht-eingelesen</td><td>noch nicht eingelesen</td></tr><tr><td>ausstehend</td><td>ausstehend</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet StatusBildbefundVS</b></p><a name=\"StatusBildbefundVS\"> </a><a name=\"hcStatusBildbefundVS\"> </a><a name=\"StatusBildbefundVS-en-US\"> </a><ul><li>Include these codes as defined in <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>nicht-vorhanden</td><td>nicht vorhanden</td></tr><tr><td>eingelesen</td><td>sind eingelesen</td></tr><tr><td>noch-nicht-eingelesen</td><td>noch nicht eingelesen</td></tr><tr><td>ausstehend</td><td>ausstehend</td></tr></table></li></ul></div>"
   },
   "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/StatusBildbefundVS",
   "version" : "0.1.0",
   "name" : "StatusBildbefundVS",
   "title" : "StatusBildbefundVS",
   "status" : "draft",
-  "date" : "2025-04-29T14:54:46+02:00",
+  "date" : "2025-04-29T15:11:56+02:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -28,7 +28,7 @@
     "include" : [{
       "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
       "concept" : [{
-        "code" : "nichtVorhanden",
+        "code" : "nicht-vorhanden",
         "display" : "nicht vorhanden"
       },
       {

@@ -929,7 +929,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EKGExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EKGExample</b></p><a name=\"EKGExample\"> </a><a name=\"hcEKGExample\"> </a><a name=\"EKGExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ekg.html\">EKG</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes nichtVorhanden}\">nicht vorhanden</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EKGExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EKGExample</b></p><a name=\"EKGExample\"> </a><a name=\"hcEKGExample\"> </a><a name=\"EKGExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ekg.html\">EKG</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes nicht-vorhanden}\">nicht vorhanden</span></p></div>"
       },
       "status" : "final",
       "code" : {
@@ -944,7 +944,7 @@
       "valueCodeableConcept" : {
         "coding" : [{
           "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
-          "code" : "nichtVorhanden",
+          "code" : "nicht-vorhanden",
           "display" : "nicht vorhanden"
         }]
       }

@@ -62,8 +62,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ekg.html" : "EKG",
-      "StructureDefinition-ct-mrt-thorax.html" : "CT / MRT Thorax"
+      "StructureDefinition-ct-mrt-thorax.html" : "CT / MRT Thorax",
+      "StructureDefinition-ekg.html" : "EKG"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs",
@@ -77,11 +77,11 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen",
+      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel",
       "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest",
-      "StructureDefinition-pet-ct.html" : "PetCT",
       "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
-      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel"
+      "StructureDefinition-pet-ct.html" : "PetCT",
+      "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",
