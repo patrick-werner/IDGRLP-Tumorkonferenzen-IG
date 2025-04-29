@@ -641,28 +641,33 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"/>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example"/>
     <resource>
-      <Observation>
-        <id value="RelevanteNebendiagnosenFreitextExample"/>
+      <Condition>
+        <id value="Nebendiagnose-Example"/>
         <meta>
-          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"/>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_RelevanteNebendiagnosenFreitextExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation RelevanteNebendiagnosenFreitextExample</b></p><a name="RelevanteNebendiagnosenFreitextExample"> </a><a name="hcRelevanteNebendiagnosenFreitextExample"> </a><a name="RelevanteNebendiagnosenFreitextExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-relevante-nebendiagnosen-freitext.html">RelevanteNebendiagnosenFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes relevanteNebendiagnosenFreitext}">relevanteNebendiagnosenFreitext</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: Diabetes mellitus Typ 2</p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_Nebendiagnose-Example"> </a><p class="res-header-id"><b>Generated Narrative: Condition Nebendiagnose-Example</b></p><a name="Nebendiagnose-Example"> </a><a name="hcNebendiagnose-Example"> </a><a name="Nebendiagnose-Example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Nebendiagnose.html">Nebendiagnose</a></p></div><p><b>Condition Related</b>: <a href="Condition-ICD10GM-DiagnoseExample.html">Condition Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus</a></p><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J18.9}">J18.9</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>recordedDate</b>: 2025-04-28</p></div>
         </text>
-        <status value="final"/>
+        <extension url="http://hl7.org/fhir/StructureDefinition/condition-related">
+          <valueReference>
+            <reference value="Condition/ICD10GM-DiagnoseExample"/>
+          </valueReference>
+        </extension>
         <code>
           <coding>
-            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
-            <code value="relevanteNebendiagnosenFreitext"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+            <version value="2024"/>
+            <code value="J18.9"/>
           </coding>
         </code>
         <subject>
           <reference value="Patient/TumorPatientExample"/>
         </subject>
-        <valueString value="Diabetes mellitus Typ 2"/>
-      </Observation>
+        <recordedDate value="2025-04-28"/>
+      </Condition>
     </resource>
   </entry>
   <entry>

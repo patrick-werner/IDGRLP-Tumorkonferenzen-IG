@@ -243,8 +243,8 @@
 <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample&quot;^^xsd:anyURI ] ;
     ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample&gt; )
   ] [
-<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample&quot;^^xsd:anyURI ] ;
-    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample&gt; )
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition">fhir:resource</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example&gt; )
   ] [
 <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample&quot;^^xsd:anyURI ] ;
     ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample&gt; )
@@ -872,30 +872,33 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Stabiler Verlauf unter Immuntherapie&quot;
   ] . # 
 
-&lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;RelevanteNebendiagnosenFreitextExample&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+&lt;http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example&gt; <a href="http://hl7.org/fhir/R4/condition.html">a</a> fhir:Condition ;
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Nebendiagnose-Example&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext&gt;     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose&gt;     ] )
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_RelevanteNebendiagnosenFreitextExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation RelevanteNebendiagnosenFreitextExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;RelevanteNebendiagnosenFreitextExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcRelevanteNebendiagnosenFreitextExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;RelevanteNebendiagnosenFreitextExample-en-US\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-relevante-nebendiagnosen-freitext.html\&quot;&gt;RelevanteNebendiagnosenFreitext&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes relevanteNebendiagnosenFreitext}\&quot;&gt;relevanteNebendiagnosenFreitext&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Diabetes mellitus Typ 2&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Condition_Nebendiagnose-Example\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Condition Nebendiagnose-Example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;Nebendiagnose-Example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcNebendiagnose-Example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;Nebendiagnose-Example-en-US\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-Nebendiagnose.html\&quot;&gt;Nebendiagnose&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Condition Related&lt;/b&gt;: &lt;a href=\&quot;Condition-ICD10GM-DiagnoseExample.html\&quot;&gt;Condition Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J18.9}\&quot;&gt;J18.9&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2025-04-28&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/condition-related&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition/ICD10GM-DiagnoseExample&quot; ]     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.code">fhir:code</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;relevanteNebendiagnosenFreitext&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://fhir.de/CodeSystem/bfarm/icd-10-gm&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2024&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;J18.9&quot; ]     ] )
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.subject">fhir:subject</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/TumorPatientExample&quot; ]
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diabetes mellitus Typ 2&quot;
-  ] . # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.recordedDate">fhir:recordedDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-04-28&quot;^^xsd:date] . # 
 
 &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;FragestellungTumorkonferenzFreitextExample&quot;] ; # 
@@ -1184,7 +1187,7 @@ a loinc:11524-6 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 29, 2025 15:12+0200">2025-04-29</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 29, 2025 15:46+0200">2025-04-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

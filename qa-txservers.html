@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TumorkonferenzenIDG</h1>
- <p>Generated Tue Apr 29 15:16:23 CEST 2025, FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = <a href="http://idg-rlp.de/fhir/tumorkonferenzen">http://idg-rlp.de/fhir/tumorkonferenzen</a> (<a href="http://idg-rlp.de/fhir/tumorkonferenzen/history.html">history</a>))</p>
+ <p>Generated Tue Apr 29 15:49:25 CEST 2025, FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = <a href="http://idg-rlp.de/fhir/tumorkonferenzen">http://idg-rlp.de/fhir/tumorkonferenzen</a> (<a href="http://idg-rlp.de/fhir/tumorkonferenzen/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -77,20 +77,6 @@
   <tr>
     <td>System not handled by any servers. Using primary server</td>
     <td>http://tx.fhir.org/r4</td>
-    <td></td>
-    <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/StatusBildbefundVS-inc-0</td>
-    <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://fhir.de/CodeSystem/bfarm/icd-10-gm</td>
     <td>auth = , candidates=</td>
@@ -101,6 +87,13 @@
     <td>null</td>
     <td>http://fhir.de/CodeSystem/bfarm/icd-10-gm</td>
     <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-Neoplasien|0.1.0</td>
+    <td>[http://fhir.de/CodeSystem/bfarm/icd-10-gm, http://fhir.de/CodeSystem/bfarm/icd-10-gm|2024]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -133,7 +126,7 @@
 </table>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
 <a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 7. Code Systems used: </p>
+<p>Use Count: 6. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -152,10 +145,16 @@
   <tr>
     <td>http://fhir.de/CodeSystem/bfarm/icd-10-gm</td>
     <td>0</td>
-    <td>3</td>
+    <td>4</td>
     <td>
       <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.molgen@2025.0.0&amp;canonical=http://fhir.de/CodeSystem/bfarm/icd-10-gm">ICD-10-GM</a>
     </td>
+  </tr>
+  <tr>
+    <td>http://fhir.de/CodeSystem/bfarm/icd-10-gm|2024</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
   </tr>
   <tr>
     <td>http://hl7.org/fhir/fhir-types</td>
@@ -165,7 +164,7 @@
   </tr>
   <tr>
     <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes</td>
-    <td>2</td>
+    <td>0</td>
     <td>1</td>
     <td></td>
   </tr>

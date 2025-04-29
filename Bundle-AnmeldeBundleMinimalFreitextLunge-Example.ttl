@@ -70,8 +70,8 @@
      fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample"^^xsd:anyURI ] ;
      fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample> )
   ] [
-     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"^^xsd:anyURI ] ;
-     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample> )
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example> )
   ] [
      fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample"^^xsd:anyURI ] ;
      fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample> )
@@ -795,33 +795,38 @@
      fhir:v "Stabiler Verlauf unter Immuntherapie"
   ] . # 
 
-<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample> a fhir:Observation ;
-  fhir:id [ fhir:v "RelevanteNebendiagnosenFreitextExample"] ; # 
+<http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example> a fhir:Condition ;
+  fhir:id [ fhir:v "Nebendiagnose-Example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"^^xsd:anyURI ;
-       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext>
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose>
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RelevanteNebendiagnosenFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RelevanteNebendiagnosenFreitextExample</b></p><a name=\"RelevanteNebendiagnosenFreitextExample\"> </a><a name=\"hcRelevanteNebendiagnosenFreitextExample\"> </a><a name=\"RelevanteNebendiagnosenFreitextExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-relevante-nebendiagnosen-freitext.html\">RelevanteNebendiagnosenFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes relevanteNebendiagnosenFreitext}\">relevanteNebendiagnosenFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Diabetes mellitus Typ 2</p></div>"^^rdf:XMLLiteral
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_Nebendiagnose-Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition Nebendiagnose-Example</b></p><a name=\"Nebendiagnose-Example\"> </a><a name=\"hcNebendiagnose-Example\"> </a><a name=\"Nebendiagnose-Example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Nebendiagnose.html\">Nebendiagnose</a></p></div><p><b>Condition Related</b>: <a href=\"Condition-ICD10GM-DiagnoseExample.html\">Condition Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus</a></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm J18.9}\">J18.9</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>recordedDate</b>: 2025-04-28</p></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:status [ fhir:v "final"] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/condition-related"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Condition/ICD10GM-DiagnoseExample> ;
+       fhir:reference [ fhir:v "Condition/ICD10GM-DiagnoseExample" ]
+     ]
+  ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "relevanteNebendiagnosenFreitext" ]
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/icd-10-gm"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2024" ] ;
+       fhir:code [ fhir:v "J18.9" ]
      ] )
   ] ; # 
   fhir:subject [
      fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
      fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
   ] ; # 
-  fhir:value [
-     a fhir:string ;
-     fhir:v "Diabetes mellitus Typ 2"
-  ] . # 
+  fhir:recordedDate [ fhir:v "2025-04-28"^^xsd:date] . # 
 
 <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample> a fhir:Observation ;
   fhir:id [ fhir:v "FragestellungTumorkonferenzFreitextExample"] ; # 

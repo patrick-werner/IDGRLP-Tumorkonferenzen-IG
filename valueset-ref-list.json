@@ -77,11 +77,11 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel",
       "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest",
       "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
+      "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen",
       "StructureDefinition-pet-ct.html" : "PetCT",
-      "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen"
+      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",

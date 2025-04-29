@@ -64,6 +64,7 @@
       "Condition.code.coding"
     ],
     "http://hl7.org/fhir/StructureDefinition/condition-related": [
+      "Bundle.entry.resource",
       "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
