@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "CTMRTSchaedel"] ; # 
   fhir:title [ fhir:v "CT/MRT Schädel"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-04-29T08:55:06+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-29T14:54:46+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

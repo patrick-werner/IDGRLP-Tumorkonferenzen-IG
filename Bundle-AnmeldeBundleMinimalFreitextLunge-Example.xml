@@ -165,7 +165,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample"/>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Condition/ICD10GM-DiagnoseExample"/>
     <resource>
       <Condition>
         <id value="ICD10GM-DiagnoseExample"/>

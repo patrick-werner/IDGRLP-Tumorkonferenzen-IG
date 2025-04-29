@@ -34,8 +34,8 @@
      fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"^^xsd:anyURI ] ;
      fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample> )
   ] [
-     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample"^^xsd:anyURI ] ;
-     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample> )
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Condition/ICD10GM-DiagnoseExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Condition/ICD10GM-DiagnoseExample> )
   ] [
      fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample"^^xsd:anyURI ] ;
      fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample> )
@@ -265,7 +265,7 @@
      fhir:v "Lungenkrebs im fortgeschrittenen Stadium"
   ] . # 
 
-<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample> a fhir:Condition ;
+<http://idg-rlp.de/fhir/tumorkonferenzen/Condition/ICD10GM-DiagnoseExample> a fhir:Condition ;
   fhir:id [ fhir:v "ICD10GM-DiagnoseExample"] ; # 
   fhir:meta [
      fhir:profile ( [

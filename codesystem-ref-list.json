@@ -45,9 +45,9 @@
       "uses" : {
       },
       "ValueSet-histologische-typisierung-vs.html" : "Histologische Typisierung ValueSet",
-      "ValueSet-ja-nein-unbekannt-vs.html" : "Expanded Yes/No Indicator ValueSet",
       "ValueSet-ja-nein-beratung-vs.html" : "Ja, Nein, Beratung schon erfolgt ValueSet",
-      "ValueSet-pos-neg-nask-vs.html" : "PosNegNask"
+      "ValueSet-pos-neg-nask-vs.html" : "PosNegNask",
+      "ValueSet-ja-nein-unbekannt-vs.html" : "Expanded Yes/No Indicator ValueSet"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",

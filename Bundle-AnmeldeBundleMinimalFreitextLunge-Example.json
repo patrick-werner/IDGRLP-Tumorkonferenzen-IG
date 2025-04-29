@@ -164,7 +164,7 @@
     }
   },
   {
-    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample",
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Condition/ICD10GM-DiagnoseExample",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "ICD10GM-DiagnoseExample",

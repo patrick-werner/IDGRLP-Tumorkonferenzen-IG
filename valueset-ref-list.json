@@ -77,10 +77,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest",
-      "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
-      "StructureDefinition-pet-ct.html" : "PetCT",
       "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen",
+      "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest",
+      "StructureDefinition-pet-ct.html" : "PetCT",
+      "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
       "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel"
     },
     {
