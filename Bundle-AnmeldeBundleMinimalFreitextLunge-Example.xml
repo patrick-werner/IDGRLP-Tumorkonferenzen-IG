@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="AnmeldeBundleMinimalFreitextLunge-Example"/>
+  <meta>
+    <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample"/>
+    <resource>
+      <Practitioner>
+        <id value="AnmelderExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_AnmelderExample"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner AnmelderExample</b></p><a name="AnmelderExample"> </a><a name="hcAnmelderExample"> </a><a name="AnmelderExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Anmelder.html">Anmelder</a></p></div><p><b>name</b>: Dr. Erika Musterfrau</p><p><b>telecom</b>: <a href="tel:+49987654321">+49 987 654321</a></p></div>
+        </text>
+        <name>
+          <text value="Dr. Erika Musterfrau"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="+49 987 654321"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample"/>
+    <resource>
+      <Patient>
+        <id value="TumorPatientExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_TumorPatientExample"> </a><p class="res-header-id"><b>Generated Narrative: Patient TumorPatientExample</b></p><a name="TumorPatientExample"> </a><a name="hcTumorPatientExample"> </a><a name="TumorPatientExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TumorPatient.html">Tumor-Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Max Mustermann  Male, DoB: 1960-05-01 ( 123456789)</p><hr/></div>
+        </text>
+        <identifier>
+          <value value="123456789"/>
+        </identifier>
+        <name>
+          <family value="Mustermann"/>
+          <given value="Max"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1960-05-01"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample"/>
+    <resource>
+      <Observation>
+        <id value="TumorBoardAnmeldungExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor-board-anmeldung"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TumorBoardAnmeldungExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation TumorBoardAnmeldungExample</b></p><a name="TumorBoardAnmeldungExample"> </a><a name="hcTumorBoardAnmeldungExample"> </a><a name="TumorBoardAnmeldungExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tumor-board-anmeldung.html">TumorBoardAnmeldung</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes tumorBoardAnmeldung}">tumorBoardAnmeldung</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes tumorboard}">tumorboard</span></p><p><b>value</b>: <span title="Codes:">tumorboard-lunge-mittwochs</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes terminwunsch}">terminwunsch</span></p><p><b>value</b>: 2023-10-01</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes zweitmeinung}">zweitmeinung</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 373066001}">Ja</span></p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="tumorBoardAnmeldung"/>
+          </coding>
+        </code>
+        <component>
+          <code>
+            <coding>
+              <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+              <code value="tumorboard"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <code value="tumorboard-lunge-mittwochs"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+              <code value="terminwunsch"/>
+            </coding>
+          </code>
+          <valueString value="2023-10-01"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+              <code value="zweitmeinung"/>
+            </coding>
+          </code>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="373066001"/>
+              <display value="Ja"/>
+            </coding>
+          </valueCodeableConcept>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologischeTypisierungLungeExample"/>
+    <resource>
+      <Observation>
+        <id value="HistologischeTypisierungLungeExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologische-typisierung-lunge"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_HistologischeTypisierungLungeExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation HistologischeTypisierungLungeExample</b></p><a name="HistologischeTypisierungLungeExample"> </a><a name="hcHistologischeTypisierungLungeExample"> </a><a name="HistologischeTypisierungLungeExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-histologische-typisierung-lunge.html">Histologische Typisierung Lunge</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes histologischeTypisierung}">histologischeTypisierung</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 254637007}">NSCLC</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="histologischeTypisierung"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="254637007"/>
+            <display value="NSCLC"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"/>
+    <resource>
+      <Observation>
+        <id value="DiagnoseFreitextExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_DiagnoseFreitextExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation DiagnoseFreitextExample</b></p><a name="DiagnoseFreitextExample"> </a><a name="hcDiagnoseFreitextExample"> </a><a name="DiagnoseFreitextExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnoseFreitext.html">DiagnoseFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes diagnoseFreitext}">diagnoseFreitext</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: Lungenkrebs im fortgeschrittenen Stadium</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="diagnoseFreitext"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueString value="Lungenkrebs im fortgeschrittenen Stadium"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample"/>
+    <resource>
+      <Condition>
+        <id value="ICD10GM-DiagnoseExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseLungenTumorMinimal"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Condition_ICD10GM-DiagnoseExample"> </a><p class="res-header-id"><b>Generated Narrative: Condition ICD10GM-DiagnoseExample</b></p><a name="ICD10GM-DiagnoseExample"> </a><a name="hcICD10GM-DiagnoseExample"> </a><a name="ICD10GM-DiagnoseExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnoseLungenTumorMinimal.html">Diagnose Lungen-Tumor Minimal</a></p></div><p><b>MII EX Onko Histology Morphology Behavior ICDO3</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 8140/3}">Adenokarzinom o.n.A.</span></p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C34.0}">Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus</span></p><p><b>bodySite</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 C34.0}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation M}">Hauptbronchus</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>recordedDate</b>: 2020-02-16</p></div>
+        </text>
+        <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+              <code value="8140/3"/>
+              <display value="Adenokarzinom o.n.A."/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+          </coding>
+        </clinicalStatus>
+        <code>
+          <coding>
+            <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+            <version value="2025"/>
+            <code value="C34.0"/>
+            <display value="Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus"/>
+          </coding>
+        </code>
+        <bodySite>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+            <code value="C34.0"/>
+            <display value="Hauptbronchus"/>
+          </coding>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation"/>
+            <code value="M"/>
+            <display value="Mittellinie/mittig"/>
+          </coding>
+        </bodySite>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <recordedDate value="2020-02-16"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample"/>
+    <resource>
+      <Observation>
+        <id value="AllgemeinerLeistungszustandKarnofskyExample"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_AllgemeinerLeistungszustandKarnofskyExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation AllgemeinerLeistungszustandKarnofskyExample</b></p><a name="AllgemeinerLeistungszustandKarnofskyExample"> </a><a name="hcAllgemeinerLeistungszustandKarnofskyExample"> </a><a name="AllgemeinerLeistungszustandKarnofskyExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky">MII PR Onkologie Allgemeiner Leistungszustand nach Karnofsky</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 761869008}">761869008</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky 30%}">30%</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="761869008"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky"/>
+            <code value="30%"/>
+            <display value="30%"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample"/>
+    <resource>
+      <Observation>
+        <id value="GradingExample"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_GradingExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation GradingExample</b></p><a name="GradingExample"> </a><a name="hcGradingExample"> </a><a name="GradingExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading">MII PR Onkologie Grading</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 33732-9}">Histology grade [Identifier] in Cancer specimen</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>effective</b>: 2022-04-21</p><p><b>value</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading 3}">schlecht differenziert</span></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="33732-9"/>
+            <display value="Histology grade [Identifier] in Cancer specimen"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2022-04-21"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading"/>
+            <code value="3"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"/>
+    <resource>
+      <Observation>
+        <id value="ErstdiagnoseExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Erstdiagnose"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_ErstdiagnoseExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation ErstdiagnoseExample</b></p><a name="ErstdiagnoseExample"> </a><a name="hcErstdiagnoseExample"> </a><a name="ErstdiagnoseExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Erstdiagnose.html">Erstdiagnose</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes erstdiagnose}">erstdiagnose</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes datumED}">datumED</span></p><p><b>value</b>: 2021-03-15</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes stadiumBeiED}">stadiumBeiED</span></p><p><b>value</b>: IIIb</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes cTNMbeiED}">cTNMbeiED</span></p><p><b>value</b>: T4 N3 M0</p></blockquote></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="erstdiagnose"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <component>
+          <code>
+            <coding>
+              <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+              <code value="datumED"/>
+            </coding>
+          </code>
+          <valueDateTime value="2021-03-15"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+              <code value="stadiumBeiED"/>
+            </coding>
+          </code>
+          <valueString value="IIIb"/>
+        </component>
+        <component>
+          <code>
+            <coding>
+              <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+              <code value="cTNMbeiED"/>
+            </coding>
+          </code>
+          <valueString value="T4 N3 M0"/>
+        </component>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-Example"/>
+    <resource>
+      <Observation>
+        <id value="TNM-Example"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNM-Example"> </a><p class="res-header-id"><b>Generated Narrative: Observation TNM-Example</b></p><a name="TNM-Example"> </a><a name="hcTNM-Example"> </a><a name="TNM-Example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation">MII PR Onkologie TNM-Klassifikation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 399537006}">Clinical TNM stage grouping</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title="Codes:{https://www.uicc.org/resources/tnm 0}">Stadium 0</span></p><p><b>method</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}">8. Auflage</span></p><p><b>hasMember</b>: </p><ul><li><a href="Observation-TNM-T-Example.html">Observation cT category (observable entity)</a></li><li><a href="Observation-TNM-N-Example.html">Observation cN category (observable entity)</a></li><li><a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.3&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/mii-exa-onko-tnm-m-kategorie-M0">Observation/mii-exa-onko-tnm-m-kategorie-M0</a></li></ul></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="399537006"/>
+            <display value="Clinical TNM stage grouping"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2024-01-11"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.uicc.org/resources/tnm"/>
+            <code value="0"/>
+            <display value="Stadium 0"/>
+          </coding>
+        </valueCodeableConcept>
+        <method>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"/>
+            <code value="8"/>
+            <display value="8. Auflage"/>
+          </coding>
+        </method>
+        <hasMember>
+          <reference value="Observation/TNM-T-Example"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/TNM-N-Example"/>
+        </hasMember>
+        <hasMember>
+          <reference value="Observation/mii-exa-onko-tnm-m-kategorie-M0"/>
+        </hasMember>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-T-Example"/>
+    <resource>
+      <Observation>
+        <id value="TNM-T-Example"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNM-T-Example"> </a><p class="res-header-id"><b>Generated Narrative: Observation TNM-T-Example</b></p><a name="TNM-T-Example"> </a><a name="hcTNM-T-Example"> </a><a name="TNM-T-Example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie">MII PR Onkologie TNM T-Kategorie</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 399504009}">cT category (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title="Codes:{https://www.uicc.org/resources/tnm T2a2}">T2a2</span></p><p><b>method</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}">8. Auflage</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://www.uicc.org/resources/tnm"/>
+                <code value="c"/>
+                <display value="c"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="399504009"/>
+            <display value="cT category (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2024-01-11"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.uicc.org/resources/tnm"/>
+            <code value="T2a2"/>
+            <display value="T2a2"/>
+          </coding>
+        </valueCodeableConcept>
+        <method>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"/>
+            <code value="8"/>
+            <display value="8. Auflage"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-N-Example"/>
+    <resource>
+      <Observation>
+        <id value="TNM-N-Example"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNM-N-Example"> </a><p class="res-header-id"><b>Generated Narrative: Observation TNM-N-Example</b></p><a name="TNM-N-Example"> </a><a name="hcTNM-N-Example"> </a><a name="TNM-N-Example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie">MII PR Onkologie TNM N-Kategorie</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 399534004}">cN category (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title="Codes:{https://www.uicc.org/resources/tnm N0}">N0</span></p><p><b>method</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}">8. Auflage</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://www.uicc.org/resources/tnm"/>
+                <code value="c"/>
+                <display value="c"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="399534004"/>
+            <display value="cN category (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2024-01-11"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.uicc.org/resources/tnm"/>
+            <code value="N0"/>
+            <display value="N0"/>
+          </coding>
+        </valueCodeableConcept>
+        <method>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"/>
+            <code value="8"/>
+            <display value="8. Auflage"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-M-Example"/>
+    <resource>
+      <Observation>
+        <id value="TNM-M-Example"/>
+        <meta>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNM-M-Example"> </a><p class="res-header-id"><b>Generated Narrative: Observation TNM-M-Example</b></p><a name="TNM-M-Example"> </a><a name="hcTNM-M-Example"> </a><a name="TNM-M-Example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie">MII PR Onkologie TNM M-Kategorie</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 399387003}">cM category (observable entity)</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title="Codes:{https://www.uicc.org/resources/tnm M0}">M0</span></p><p><b>method</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}">8. Auflage</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://www.uicc.org/resources/tnm"/>
+                <code value="c"/>
+                <display value="c"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="399387003"/>
+            <display value="cM category (observable entity)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <effectiveDateTime value="2024-01-11"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://www.uicc.org/resources/tnm"/>
+            <code value="M0"/>
+            <display value="M0"/>
+          </coding>
+        </valueCodeableConcept>
+        <method>
+          <coding>
+            <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"/>
+            <code value="8"/>
+            <display value="8. Auflage"/>
+          </coding>
+        </method>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal"/>
+    <resource>
+      <Observation>
+        <id value="ECOGExampleMinimal"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_ECOGExampleMinimal"> </a><p class="res-header-id"><b>Generated Narrative: Observation ECOGExampleMinimal</b></p><a name="ECOGExampleMinimal"> </a><a name="hcECOGExampleMinimal"> </a><a name="ECOGExampleMinimal-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ecog.html">ECOG</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 89247-1}">ECOG Performance Status score</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA9624-3}">ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="89247-1"/>
+            <display value="ECOG Performance Status score"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="LA9624-3"/>
+            <display value="ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PraxisPathologischesInstitutFreitextExample"/>
+    <resource>
+      <Observation>
+        <id value="PraxisPathologischesInstitutFreitextExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/praxis-pathologisches-institut-freitext"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_PraxisPathologischesInstitutFreitextExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation PraxisPathologischesInstitutFreitextExample</b></p><a name="PraxisPathologischesInstitutFreitextExample"> </a><a name="hcPraxisPathologischesInstitutFreitextExample"> </a><a name="PraxisPathologischesInstitutFreitextExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-praxis-pathologisches-institut-freitext.html">PraxisPathologischesInstitutFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes praxisPathologischesInstitutFreitext}">praxisPathologischesInstitutFreitext</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: Institut für Pathologie, Musterstadt</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="praxisPathologischesInstitutFreitext"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueString value="Institut für Pathologie, Musterstadt"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample"/>
+    <resource>
+      <Observation>
+        <id value="HistologieMolPatFreitextExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_HistologieMolPatFreitextExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation HistologieMolPatFreitextExample</b></p><a name="HistologieMolPatFreitextExample"> </a><a name="hcHistologieMolPatFreitextExample"> </a><a name="HistologieMolPatFreitextExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-HistologieMolPatFreitext.html">HistologieMolPatFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes histologieMolPatFreitext}">histologieMolPatFreitext</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: Adenokarzinom der Lunge, EGFR-Mutation nachgewiesen</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="histologieMolPatFreitext"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueString value="Adenokarzinom der Lunge, EGFR-Mutation nachgewiesen"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample"/>
+    <resource>
+      <Observation>
+        <id value="VerlaufFreitextExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_VerlaufFreitextExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation VerlaufFreitextExample</b></p><a name="VerlaufFreitextExample"> </a><a name="hcVerlaufFreitextExample"> </a><a name="VerlaufFreitextExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-verlauf-freitext.html">VerlaufFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes verlaufFreitext}">verlaufFreitext</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: Stabiler Verlauf unter Immuntherapie</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="verlaufFreitext"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueString value="Stabiler Verlauf unter Immuntherapie"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"/>
+    <resource>
+      <Observation>
+        <id value="RelevanteNebendiagnosenFreitextExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_RelevanteNebendiagnosenFreitextExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation RelevanteNebendiagnosenFreitextExample</b></p><a name="RelevanteNebendiagnosenFreitextExample"> </a><a name="hcRelevanteNebendiagnosenFreitextExample"> </a><a name="RelevanteNebendiagnosenFreitextExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-relevante-nebendiagnosen-freitext.html">RelevanteNebendiagnosenFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes relevanteNebendiagnosenFreitext}">relevanteNebendiagnosenFreitext</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: Diabetes mellitus Typ 2</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="relevanteNebendiagnosenFreitext"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueString value="Diabetes mellitus Typ 2"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample"/>
+    <resource>
+      <Observation>
+        <id value="FragestellungTumorkonferenzFreitextExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-tumorkonferenz-freitext"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_FragestellungTumorkonferenzFreitextExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation FragestellungTumorkonferenzFreitextExample</b></p><a name="FragestellungTumorkonferenzFreitextExample"> </a><a name="hcFragestellungTumorkonferenzFreitextExample"> </a><a name="FragestellungTumorkonferenzFreitextExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fragestellung-tumorkonferenz-freitext.html">FragestellungTumorkonferenzFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes fragestellungTumorkonferenzFreitext}">fragestellungTumorkonferenzFreitext</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: Empfehlung für Chemo-Immuntherapie</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="fragestellungTumorkonferenzFreitext"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueString value="Empfehlung für Chemo-Immuntherapie"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTSchaedelExample"/>
+    <resource>
+      <Observation>
+        <id value="CTMRTSchaedelExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-schaedel"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_CTMRTSchaedelExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation CTMRTSchaedelExample</b></p><a name="CTMRTSchaedelExample"> </a><a name="hcCTMRTSchaedelExample"> </a><a name="CTMRTSchaedelExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ct-mrt-schaedel.html">CT/MRT Schädel</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTSchaedel}">ctMRTSchaedel</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes auffaellig}">auffällig</span></p><p><b>note</b>: Metastasen im Schädel</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="ctMRTSchaedel"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="auffaellig"/>
+            <display value="auffällig"/>
+          </coding>
+        </valueCodeableConcept>
+        <note>
+          <text value="Metastasen im Schädel"/>
+        </note>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample"/>
+    <resource>
+      <Observation>
+        <id value="CTMRTAbdomenExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-abdomen"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_CTMRTAbdomenExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation CTMRTAbdomenExample</b></p><a name="CTMRTAbdomenExample"> </a><a name="hcCTMRTAbdomenExample"> </a><a name="CTMRTAbdomenExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ct-mrt-abdomen.html">CT/MRT Abdomen</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTAbdomen}">ctMRTAbdomen</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}">unauffällig</span></p><p><b>note</b>: Keine pathologischen Befunde im Abdomen</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="ctMRTAbdomen"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="unauffaellig"/>
+            <display value="unauffällig"/>
+          </coding>
+        </valueCodeableConcept>
+        <note>
+          <text value="Keine pathologischen Befunde im Abdomen"/>
+        </note>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample"/>
+    <resource>
+      <Observation>
+        <id value="PetCTExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/pet-ct"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_PetCTExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation PetCTExample</b></p><a name="PetCTExample"> </a><a name="hcPetCTExample"> </a><a name="PetCTExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-pet-ct.html">PetCT</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes petCT}">petCT</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}">unauffällig</span></p><p><b>note</b>: Keine pathologischen Befunde im PET-CT</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="petCT"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="unauffaellig"/>
+            <display value="unauffällig"/>
+          </coding>
+        </valueCodeableConcept>
+        <note>
+          <text value="Keine pathologischen Befunde im PET-CT"/>
+        </note>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample"/>
+    <resource>
+      <Observation>
+        <id value="SkelettszintigraphieExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/skelettszintigraphie"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_SkelettszintigraphieExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation SkelettszintigraphieExample</b></p><a name="SkelettszintigraphieExample"> </a><a name="hcSkelettszintigraphieExample"> </a><a name="SkelettszintigraphieExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-skelettszintigraphie.html">Skelettszintigraphie</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes skelettszintigraphie}">skelettszintigraphie</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}">liegt nicht vor</span></p><p><b>note</b>: Keine Skelettmetastasen</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="skelettszintigraphie"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="liegtNichtVor"/>
+            <display value="liegt nicht vor"/>
+          </coding>
+        </valueCodeableConcept>
+        <note>
+          <text value="Keine Skelettmetastasen"/>
+        </note>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample"/>
+    <resource>
+      <Observation>
+        <id value="LungenfunktionstestExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/lungenfunktionstest"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_LungenfunktionstestExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation LungenfunktionstestExample</b></p><a name="LungenfunktionstestExample"> </a><a name="hcLungenfunktionstestExample"> </a><a name="LungenfunktionstestExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-lungenfunktionstest.html">Lungenfunktionstest</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes lungenfunktionstest}">lungenfunktionstest</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}">liegt nicht vor</span></p><p><b>note</b>: Keine Lungenfunktionsstörungen</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="lungenfunktionstest"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="liegtNichtVor"/>
+            <display value="liegt nicht vor"/>
+          </coding>
+        </valueCodeableConcept>
+        <note>
+          <text value="Keine Lungenfunktionsstörungen"/>
+        </note>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample"/>
+    <resource>
+      <Observation>
+        <id value="FragestellungRadiologieFreitextExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-radiologie-freitext"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_FragestellungRadiologieFreitextExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation FragestellungRadiologieFreitextExample</b></p><a name="FragestellungRadiologieFreitextExample"> </a><a name="hcFragestellungRadiologieFreitextExample"> </a><a name="FragestellungRadiologieFreitextExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fragestellung-radiologie-freitext.html">FragestellungRadiologieFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes fragestellungRadiologieFreitext}">fragestellungRadiologieFreitext</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: Abklärung möglicher Metastasen im Abdomen</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="fragestellungRadiologieFreitext"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueString value="Abklärung möglicher Metastasen im Abdomen"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTExample"/>
+    <resource>
+      <Observation>
+        <id value="CTMRTExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-thorax"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_CTMRTExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation CTMRTExample</b></p><a name="CTMRTExample"> </a><a name="hcCTMRTExample"> </a><a name="CTMRTExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ct-mrt-thorax.html">CT / MRT Thorax</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ct-mrt-thorax}">ct-mrt-thorax</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes noch-nicht-eingelesen}">noch nicht eingelesen</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="ct-mrt-thorax"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="noch-nicht-eingelesen"/>
+            <display value="noch nicht eingelesen"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/EKGExample"/>
+    <resource>
+      <Observation>
+        <id value="EKGExample"/>
+        <meta>
+          <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ekg"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_EKGExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation EKGExample</b></p><a name="EKGExample"> </a><a name="hcEKGExample"> </a><a name="EKGExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ekg.html">EKG</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 11524-6}">EKG study</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes nichtVorhanden}">nicht vorhanden</span></p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="11524-6"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TumorPatientExample"/>
+        </subject>
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"/>
+            <code value="nichtVorhanden"/>
+            <display value="nicht vorhanden"/>
+          </coding>
+        </valueCodeableConcept>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

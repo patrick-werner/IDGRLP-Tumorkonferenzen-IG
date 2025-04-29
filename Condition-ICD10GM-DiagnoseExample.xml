@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ICD10GM-DiagnoseExample"/>
+  <meta>
+    <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseLungenTumorMinimal"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition ICD10GM-DiagnoseExample</b></p><a name="ICD10GM-DiagnoseExample"> </a><a name="hcICD10GM-DiagnoseExample"> </a><a name="ICD10GM-DiagnoseExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnoseLungenTumorMinimal.html">Diagnose Lungen-Tumor Minimal</a></p></div><p><b>MII EX Onko Histology Morphology Behavior ICDO3</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 8140/3}">Adenokarzinom o.n.A.</span></p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C34.0}">Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus</span></p><p><b>bodySite</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 C34.0}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation M}">Hauptbronchus</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>recordedDate</b>: 2020-02-16</p></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+        <code value="8140/3"/>
+        <display value="Adenokarzinom o.n.A."/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <code>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2025"/>
+      <code value="C34.0"/>
+      <display value="Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus"/>
+    </coding>
+  </code>
+  <bodySite>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+      <code value="C34.0"/>
+      <display value="Hauptbronchus"/>
+    </coding>
+    <coding>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation"/>
+      <code value="M"/>
+      <display value="Mittellinie/mittig"/>
+    </coding>
+  </bodySite>
+  <subject>
+    <reference value="Patient/TumorPatientExample"/>
+  </subject>
+  <recordedDate value="2020-02-16"/>
+</Condition>

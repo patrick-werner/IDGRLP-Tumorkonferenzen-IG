@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ECOGExample"/>
+  <meta>
+    <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ECOGExample</b></p><a name="ECOGExample"> </a><a name="hcECOGExample"> </a><a name="ECOGExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ecog.html">ECOG</a></p></div><p><b>Episode of care</b>: <a href="EpisodeOfCare-TumorErkrankungExample.html">EpisodeOfCare: status = active; type = Cancer Diagnosis</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 89247-1}">ECOG Performance Status score</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://loinc.org LA9623-5}">ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare">
+    <valueReference>
+      <reference value="EpisodeOfCare/TumorErkrankungExample"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="89247-1"/>
+      <display value="ECOG Performance Status score"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TumorPatientExample"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA9623-5"/>
+      <display value="ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

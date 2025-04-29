@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TNM-Example"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation TNM-Example</b></p><a name="TNM-Example"> </a><a name="hcTNM-Example"> </a><a name="TNM-Example-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation">MII PR Onkologie TNM-Klassifikation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 399537006}">Clinical TNM stage grouping</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title="Codes:{https://www.uicc.org/resources/tnm 0}">Stadium 0</span></p><p><b>method</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}">8. Auflage</span></p><p><b>hasMember</b>: </p><ul><li><a href="Observation-TNM-T-Example.html">Observation cT category (observable entity)</a></li><li><a href="Observation-TNM-N-Example.html">Observation cN category (observable entity)</a></li><li><a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.3&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/mii-exa-onko-tnm-m-kategorie-M0">Observation/mii-exa-onko-tnm-m-kategorie-M0</a></li></ul></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="399537006"/>
+      <display value="Clinical TNM stage grouping"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TumorPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2024-01-11"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://www.uicc.org/resources/tnm"/>
+      <code value="0"/>
+      <display value="Stadium 0"/>
+    </coding>
+  </valueCodeableConcept>
+  <method>
+    <coding>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"/>
+      <code value="8"/>
+      <display value="8. Auflage"/>
+    </coding>
+  </method>
+  <hasMember>
+    <reference value="Observation/TNM-T-Example"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/TNM-N-Example"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/mii-exa-onko-tnm-m-kategorie-M0"/>
+  </hasMember>
+</Observation>

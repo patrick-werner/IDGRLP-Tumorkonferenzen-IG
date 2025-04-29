@@ -1,0 +1,209 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-tumorErkrankung.html" : "Tumorerkrankung"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Iso3166-1-2",
+      "title" : "Iso 3166 Part 1: 2 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 2-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-TumorPatient.html" : "Tumor-Patient"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-ICDO3Topo",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "C34_BronchusLunge_ICDO3TopoVS",
+      "title" : "Bösartige Neubildungen von Bronchus und Lunge (ICD-O-3 Topographie C34.x)",
+      "description" : "ICD-O-3 Topographie-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnoseLungenTumorMinimal.html" : "Diagnose Lungen-Tumor Minimal"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-Neoplasien",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "C34_BronchusLunge_NeoplasienVS",
+      "title" : "Bösartige Neubildungen von Bronchus und Lunge (ICD-10 C34.x)",
+      "description" : "ICD-10-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen.",
+      "systems" : ["http://fhir.de/CodeSystem/bfarm/icd-10-gm"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnoseLungenTumorMinimal.html" : "Diagnose Lungen-Tumor Minimal"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/StatusBildbefundVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "StatusBildbefundVS",
+      "title" : "StatusBildbefundVS",
+      "description" : "Status Bildbefund ValueSet",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ekg.html" : "EKG",
+      "StructureDefinition-ct-mrt-thorax.html" : "CT / MRT Thorax"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BefundstatusVS",
+      "title" : "Befundstatus ValueSet",
+      "description" : "ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest",
+      "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
+      "StructureDefinition-pet-ct.html" : "PetCT",
+      "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen",
+      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ECOGPerformanceStatusVS",
+      "title" : "ECOG",
+      "description" : "ECOG Performance Status (Level 0-5).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ecog.html" : "ECOG"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/externe-bilder-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ExterneBilderVS",
+      "title" : "Externe Bilder ValueSet",
+      "description" : "ValueSet für externe Bilder mit den Antwortoptionen: sind eingelesen, werden elektronisch übermittelt, werden per Post gesendet.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-externe-bilder.html" : "ExterneBilder"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/gewuenschte-teilnehmer-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "GewuenschteTeilnehmerVS",
+      "title" : "Gewünschte Teilnehmer ValueSet",
+      "description" : "ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in einem medizinischen Kontext.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-gewuenschte-teilnehmer.html" : "Gewünschte Teilnehmer"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/histologische-typisierung-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HistologischeTypisierungVS",
+      "title" : "Histologische Typisierung ValueSet",
+      "description" : "ValueSet für die histologische Typisierung mit den Antwortoptionen: Unbekannt, SCLC, NSCLC, Sonstige.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-histologische-typisierung-lunge.html" : "Histologische Typisierung Lunge"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-beratung-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "JaNeinBeratungVS",
+      "title" : "Ja, Nein, Beratung schon erfolgt ValueSet",
+      "description" : "Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolgt.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-FertilitaetsBehandlungEmpfohlen.html" : "FertilitaetsBehandlungEmpfohlen"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "JaNeinUnbekanntVS",
+      "title" : "Expanded Yes/No Indicator ValueSet",
+      "description" : "Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-board-anmeldung.html" : "TumorBoardAnmeldung"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/pos-neg-nask-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PosNegNaskVS",
+      "title" : "PosNegNask",
+      "description" : "PosNegNask",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-familienanamnese-drop-down.html" : "Familienanamnese DropDown"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorsituationVS",
+      "title" : "Tumorsituation ValueSet",
+      "description" : "ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tumorsituation.html" : "Tumorsituation"
+    },
+    {
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-seitenlokalisation",
+      "version" : "2025.0.0",
+      "status" : "active",
+      "name" : "MII_VS_Onko_Seitenlokalisation",
+      "title" : "MII VS Onkologie Primärtumor Seitenlokalisation",
+      "description" : "Codes für Seitenlokalisation, d.h. organspezifische Angabe der betroffenen Seite.",
+      "systems" : [
+        "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnoseLungenTumorMinimal.html" : "Diagnose Lungen-Tumor Minimal"
+    }
+  ]
+}

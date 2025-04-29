@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "C34-BronchusLunge-Neoplasien",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet C34-BronchusLunge-Neoplasien</b></p><a name=\"C34-BronchusLunge-Neoplasien\"> </a><a name=\"hcC34-BronchusLunge-Neoplasien\"> </a><a name=\"C34-BronchusLunge-Neoplasien-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.molgen@2025.0.0&amp;canonical=http://fhir.de/CodeSystem/bfarm/icd-10-gm\"><code>http://fhir.de/CodeSystem/bfarm/icd-10-gm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C34.0</td><td>Hauptbronchus</td></tr><tr><td>C34.1</td><td>Oberlappen (Bronchus)</td></tr><tr><td>C34.2</td><td>Mittellappen (Bronchus)</td></tr><tr><td>C34.3</td><td>Unterlappen (Bronchus)</td></tr><tr><td>C34.8</td><td>Bronchus und Lunge, mehrere Teilbereiche überlappend</td></tr><tr><td>C34.9</td><td>Bronchus oder Lunge, nicht näher bezeichnet</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-Neoplasien",
+  "version" : "0.1.0",
+  "name" : "C34_BronchusLunge_NeoplasienVS",
+  "title" : "Bösartige Neubildungen von Bronchus und Lunge (ICD-10 C34.x)",
+  "status" : "draft",
+  "date" : "2025-04-29T08:55:06+02:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "ICD-10-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "concept" : [{
+        "code" : "C34.0",
+        "display" : "Hauptbronchus"
+      },
+      {
+        "code" : "C34.1",
+        "display" : "Oberlappen (Bronchus)"
+      },
+      {
+        "code" : "C34.2",
+        "display" : "Mittellappen (Bronchus)"
+      },
+      {
+        "code" : "C34.3",
+        "display" : "Unterlappen (Bronchus)"
+      },
+      {
+        "code" : "C34.8",
+        "display" : "Bronchus und Lunge, mehrere Teilbereiche überlappend"
+      },
+      {
+        "code" : "C34.9",
+        "display" : "Bronchus oder Lunge, nicht näher bezeichnet"
+      }]
+    }]
+  }
+}

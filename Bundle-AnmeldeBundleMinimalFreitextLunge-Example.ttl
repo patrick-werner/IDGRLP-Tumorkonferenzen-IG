@@ -1,0 +1,1123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Bundle/AnmeldeBundleMinimalFreitextLunge-Example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AnmeldeBundleMinimalFreitextLunge-Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologischeTypisierungLungeExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologischeTypisierungLungeExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-Example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-Example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-T-Example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-T-Example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-N-Example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-N-Example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-M-Example"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-M-Example> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PraxisPathologischesInstitutFreitextExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PraxisPathologischesInstitutFreitextExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTSchaedelExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTSchaedelExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/EKGExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/EKGExample> )
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample> a fhir:Practitioner ;
+  fhir:id [ fhir:v "AnmelderExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_AnmelderExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner AnmelderExample</b></p><a name=\"AnmelderExample\"> </a><a name=\"hcAnmelderExample\"> </a><a name=\"AnmelderExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Anmelder.html\">Anmelder</a></p></div><p><b>name</b>: Dr. Erika Musterfrau</p><p><b>telecom</b>: <a href=\"tel:+49987654321\">+49 987 654321</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Dr. Erika Musterfrau" ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+49 987 654321" ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> a fhir:Patient ;
+  fhir:id [ fhir:v "TumorPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_TumorPatientExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient TumorPatientExample</b></p><a name=\"TumorPatientExample\"> </a><a name=\"hcTumorPatientExample\"> </a><a name=\"TumorPatientExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TumorPatient.html\">Tumor-Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Max Mustermann  Male, DoB: 1960-05-01 ( 123456789)</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "123456789" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Mustermann" ] ;
+     fhir:given ( [ fhir:v "Max" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1960-05-01"^^xsd:date] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample> a fhir:Observation ;
+  fhir:id [ fhir:v "TumorBoardAnmeldungExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor-board-anmeldung"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor-board-anmeldung>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TumorBoardAnmeldungExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TumorBoardAnmeldungExample</b></p><a name=\"TumorBoardAnmeldungExample\"> </a><a name=\"hcTumorBoardAnmeldungExample\"> </a><a name=\"TumorBoardAnmeldungExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-board-anmeldung.html\">TumorBoardAnmeldung</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes tumorBoardAnmeldung}\">tumorBoardAnmeldung</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes tumorboard}\">tumorboard</span></p><p><b>value</b>: <span title=\"Codes:\">tumorboard-lunge-mittwochs</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes terminwunsch}\">terminwunsch</span></p><p><b>value</b>: 2023-10-01</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes zweitmeinung}\">zweitmeinung</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Ja</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "tumorBoardAnmeldung" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tumorboard" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "tumorboard-lunge-mittwochs" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "terminwunsch" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "2023-10-01"
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "zweitmeinung" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:373066001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "373066001" ] ;
+         fhir:display [ fhir:v "Ja" ]
+       ] )
+     ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologischeTypisierungLungeExample> a fhir:Observation ;
+  fhir:id [ fhir:v "HistologischeTypisierungLungeExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologische-typisierung-lunge"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologische-typisierung-lunge>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_HistologischeTypisierungLungeExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation HistologischeTypisierungLungeExample</b></p><a name=\"HistologischeTypisierungLungeExample\"> </a><a name=\"hcHistologischeTypisierungLungeExample\"> </a><a name=\"HistologischeTypisierungLungeExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-histologische-typisierung-lunge.html\">Histologische Typisierung Lunge</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes histologischeTypisierung}\">histologischeTypisierung</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 254637007}\">NSCLC</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "histologischeTypisierung" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:254637007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "254637007" ] ;
+       fhir:display [ fhir:v "NSCLC" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample> a fhir:Observation ;
+  fhir:id [ fhir:v "DiagnoseFreitextExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_DiagnoseFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation DiagnoseFreitextExample</b></p><a name=\"DiagnoseFreitextExample\"> </a><a name=\"hcDiagnoseFreitextExample\"> </a><a name=\"DiagnoseFreitextExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnoseFreitext.html\">DiagnoseFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes diagnoseFreitext}\">diagnoseFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Lungenkrebs im fortgeschrittenen Stadium</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "diagnoseFreitext" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "Lungenkrebs im fortgeschrittenen Stadium"
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample> a fhir:Condition ;
+  fhir:id [ fhir:v "ICD10GM-DiagnoseExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseLungenTumorMinimal"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseLungenTumorMinimal>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ICD10GM-DiagnoseExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ICD10GM-DiagnoseExample</b></p><a name=\"ICD10GM-DiagnoseExample\"> </a><a name=\"hcICD10GM-DiagnoseExample\"> </a><a name=\"ICD10GM-DiagnoseExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnoseLungenTumorMinimal.html\">Diagnose Lungen-Tumor Minimal</a></p></div><p><b>MII EX Onko Histology Morphology Behavior ICDO3</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 8140/3}\">Adenokarzinom o.n.A.</span></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C34.0}\">Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 C34.0}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation M}\">Hauptbronchus</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>recordedDate</b>: 2020-02-16</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8140/3" ] ;
+         fhir:display [ fhir:v "Adenokarzinom o.n.A." ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/icd-10-gm"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2025" ] ;
+       fhir:code [ fhir:v "C34.0" ] ;
+       fhir:display [ fhir:v "Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus" ]
+     ] )
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C34.0" ] ;
+       fhir:display [ fhir:v "Hauptbronchus" ]
+     ] [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ] ;
+       fhir:display [ fhir:v "Mittellinie/mittig" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-02-16"^^xsd:date] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample> a fhir:Observation ;
+  fhir:id [ fhir:v "AllgemeinerLeistungszustandKarnofskyExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_AllgemeinerLeistungszustandKarnofskyExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation AllgemeinerLeistungszustandKarnofskyExample</b></p><a name=\"AllgemeinerLeistungszustandKarnofskyExample\"> </a><a name=\"hcAllgemeinerLeistungszustandKarnofskyExample\"> </a><a name=\"AllgemeinerLeistungszustandKarnofskyExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky\">MII PR Onkologie Allgemeiner Leistungszustand nach Karnofsky</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 761869008}\">761869008</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky 30%}\">30%</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:761869008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "761869008" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "30%" ] ;
+       fhir:display [ fhir:v "30%" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample> a fhir:Observation ;
+  fhir:id [ fhir:v "GradingExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_GradingExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation GradingExample</b></p><a name=\"GradingExample\"> </a><a name=\"hcGradingExample\"> </a><a name=\"GradingExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading\">MII PR Onkologie Grading</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33732-9}\">Histology grade [Identifier] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2022-04-21</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading 3}\">schlecht differenziert</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:33732-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "33732-9" ] ;
+       fhir:display [ fhir:v "Histology grade [Identifier] in Cancer specimen" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2022-04-21"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample> a fhir:Observation ;
+  fhir:id [ fhir:v "ErstdiagnoseExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Erstdiagnose"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Erstdiagnose>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ErstdiagnoseExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ErstdiagnoseExample</b></p><a name=\"ErstdiagnoseExample\"> </a><a name=\"hcErstdiagnoseExample\"> </a><a name=\"ErstdiagnoseExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Erstdiagnose.html\">Erstdiagnose</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes erstdiagnose}\">erstdiagnose</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes datumED}\">datumED</span></p><p><b>value</b>: 2021-03-15</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes stadiumBeiED}\">stadiumBeiED</span></p><p><b>value</b>: IIIb</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes cTNMbeiED}\">cTNMbeiED</span></p><p><b>value</b>: T4 N3 M0</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "erstdiagnose" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "datumED" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:dateTime ;
+       fhir:v "2021-03-15"^^xsd:date
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "stadiumBeiED" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "IIIb"
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "cTNMbeiED" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "T4 N3 M0"
+     ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-Example> a fhir:Observation ;
+  fhir:id [ fhir:v "TNM-Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TNM-Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TNM-Example</b></p><a name=\"TNM-Example\"> </a><a name=\"hcTNM-Example\"> </a><a name=\"TNM-Example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation\">MII PR Onkologie TNM-Klassifikation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 399537006}\">Clinical TNM stage grouping</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title=\"Codes:{https://www.uicc.org/resources/tnm 0}\">Stadium 0</span></p><p><b>method</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}\">8. Auflage</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-TNM-T-Example.html\">Observation cT category (observable entity)</a></li><li><a href=\"Observation-TNM-N-Example.html\">Observation cN category (observable entity)</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.3&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/mii-exa-onko-tnm-m-kategorie-M0\">Observation/mii-exa-onko-tnm-m-kategorie-M0</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:399537006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "399537006" ] ;
+       fhir:display [ fhir:v "Clinical TNM stage grouping" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-01-11"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0" ] ;
+       fhir:display [ fhir:v "Stadium 0" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "8. Auflage" ]
+     ] )
+  ] ; # 
+  fhir:hasMember ( [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-T-Example> ;
+     fhir:reference [ fhir:v "Observation/TNM-T-Example" ]
+  ] [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-N-Example> ;
+     fhir:reference [ fhir:v "Observation/TNM-N-Example" ]
+  ] [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/mii-exa-onko-tnm-m-kategorie-M0> ;
+     fhir:reference [ fhir:v "Observation/mii-exa-onko-tnm-m-kategorie-M0" ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-T-Example> a fhir:Observation ;
+  fhir:id [ fhir:v "TNM-T-Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TNM-T-Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TNM-T-Example</b></p><a name=\"TNM-T-Example\"> </a><a name=\"hcTNM-T-Example\"> </a><a name=\"TNM-T-Example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie\">MII PR Onkologie TNM T-Kategorie</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 399504009}\">cT category (observable entity)</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title=\"Codes:{https://www.uicc.org/resources/tnm T2a2}\">T2a2</span></p><p><b>method</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}\">8. Auflage</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "c" ] ;
+           fhir:display [ fhir:v "c" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:399504009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "399504009" ] ;
+       fhir:display [ fhir:v "cT category (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-01-11"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "T2a2" ] ;
+       fhir:display [ fhir:v "T2a2" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "8. Auflage" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-N-Example> a fhir:Observation ;
+  fhir:id [ fhir:v "TNM-N-Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TNM-N-Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TNM-N-Example</b></p><a name=\"TNM-N-Example\"> </a><a name=\"hcTNM-N-Example\"> </a><a name=\"TNM-N-Example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie\">MII PR Onkologie TNM N-Kategorie</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 399534004}\">cN category (observable entity)</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title=\"Codes:{https://www.uicc.org/resources/tnm N0}\">N0</span></p><p><b>method</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}\">8. Auflage</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "c" ] ;
+           fhir:display [ fhir:v "c" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:399534004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "399534004" ] ;
+       fhir:display [ fhir:v "cN category (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-01-11"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N0" ] ;
+       fhir:display [ fhir:v "N0" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "8. Auflage" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-M-Example> a fhir:Observation ;
+  fhir:id [ fhir:v "TNM-M-Example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TNM-M-Example\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TNM-M-Example</b></p><a name=\"TNM-M-Example\"> </a><a name=\"hcTNM-M-Example\"> </a><a name=\"TNM-M-Example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.3&amp;canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie\">MII PR Onkologie TNM M-Kategorie</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 399387003}\">cM category (observable entity)</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: <span title=\"Codes:{https://www.uicc.org/resources/tnm M0}\">M0</span></p><p><b>method</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version 8}\">8. Auflage</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "c" ] ;
+           fhir:display [ fhir:v "c" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:coding ( [
+       a sct:399387003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "399387003" ] ;
+       fhir:display [ fhir:v "cM category (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-01-11"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M0" ] ;
+       fhir:display [ fhir:v "M0" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "8. Auflage" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal> a fhir:Observation ;
+  fhir:id [ fhir:v "ECOGExampleMinimal"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ECOGExampleMinimal\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ECOGExampleMinimal</b></p><a name=\"ECOGExampleMinimal\"> </a><a name=\"hcECOGExampleMinimal\"> </a><a name=\"ECOGExampleMinimal-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ecog.html\">ECOG</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 89247-1}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9624-3}\">ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:89247-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "89247-1" ] ;
+       fhir:display [ fhir:v "ECOG Performance Status score" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a loinc:LA9624-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LA9624-3" ] ;
+       fhir:display [ fhir:v "ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PraxisPathologischesInstitutFreitextExample> a fhir:Observation ;
+  fhir:id [ fhir:v "PraxisPathologischesInstitutFreitextExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/praxis-pathologisches-institut-freitext"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/praxis-pathologisches-institut-freitext>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PraxisPathologischesInstitutFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PraxisPathologischesInstitutFreitextExample</b></p><a name=\"PraxisPathologischesInstitutFreitextExample\"> </a><a name=\"hcPraxisPathologischesInstitutFreitextExample\"> </a><a name=\"PraxisPathologischesInstitutFreitextExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-praxis-pathologisches-institut-freitext.html\">PraxisPathologischesInstitutFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes praxisPathologischesInstitutFreitext}\">praxisPathologischesInstitutFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Institut für Pathologie, Musterstadt</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "praxisPathologischesInstitutFreitext" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "Institut für Pathologie, Musterstadt"
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample> a fhir:Observation ;
+  fhir:id [ fhir:v "HistologieMolPatFreitextExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_HistologieMolPatFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation HistologieMolPatFreitextExample</b></p><a name=\"HistologieMolPatFreitextExample\"> </a><a name=\"hcHistologieMolPatFreitextExample\"> </a><a name=\"HistologieMolPatFreitextExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HistologieMolPatFreitext.html\">HistologieMolPatFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes histologieMolPatFreitext}\">histologieMolPatFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Adenokarzinom der Lunge, EGFR-Mutation nachgewiesen</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "histologieMolPatFreitext" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "Adenokarzinom der Lunge, EGFR-Mutation nachgewiesen"
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample> a fhir:Observation ;
+  fhir:id [ fhir:v "VerlaufFreitextExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_VerlaufFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation VerlaufFreitextExample</b></p><a name=\"VerlaufFreitextExample\"> </a><a name=\"hcVerlaufFreitextExample\"> </a><a name=\"VerlaufFreitextExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-verlauf-freitext.html\">VerlaufFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes verlaufFreitext}\">verlaufFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Stabiler Verlauf unter Immuntherapie</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "verlaufFreitext" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "Stabiler Verlauf unter Immuntherapie"
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample> a fhir:Observation ;
+  fhir:id [ fhir:v "RelevanteNebendiagnosenFreitextExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RelevanteNebendiagnosenFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RelevanteNebendiagnosenFreitextExample</b></p><a name=\"RelevanteNebendiagnosenFreitextExample\"> </a><a name=\"hcRelevanteNebendiagnosenFreitextExample\"> </a><a name=\"RelevanteNebendiagnosenFreitextExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-relevante-nebendiagnosen-freitext.html\">RelevanteNebendiagnosenFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes relevanteNebendiagnosenFreitext}\">relevanteNebendiagnosenFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Diabetes mellitus Typ 2</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "relevanteNebendiagnosenFreitext" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "Diabetes mellitus Typ 2"
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample> a fhir:Observation ;
+  fhir:id [ fhir:v "FragestellungTumorkonferenzFreitextExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-tumorkonferenz-freitext"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-tumorkonferenz-freitext>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FragestellungTumorkonferenzFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FragestellungTumorkonferenzFreitextExample</b></p><a name=\"FragestellungTumorkonferenzFreitextExample\"> </a><a name=\"hcFragestellungTumorkonferenzFreitextExample\"> </a><a name=\"FragestellungTumorkonferenzFreitextExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fragestellung-tumorkonferenz-freitext.html\">FragestellungTumorkonferenzFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes fragestellungTumorkonferenzFreitext}\">fragestellungTumorkonferenzFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Empfehlung für Chemo-Immuntherapie</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "fragestellungTumorkonferenzFreitext" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "Empfehlung für Chemo-Immuntherapie"
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTSchaedelExample> a fhir:Observation ;
+  fhir:id [ fhir:v "CTMRTSchaedelExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-schaedel"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-schaedel>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CTMRTSchaedelExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CTMRTSchaedelExample</b></p><a name=\"CTMRTSchaedelExample\"> </a><a name=\"hcCTMRTSchaedelExample\"> </a><a name=\"CTMRTSchaedelExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ct-mrt-schaedel.html\">CT/MRT Schädel</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTSchaedel}\">ctMRTSchaedel</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes auffaellig}\">auffällig</span></p><p><b>note</b>: Metastasen im Schädel</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ctMRTSchaedel" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "auffaellig" ] ;
+       fhir:display [ fhir:v "auffällig" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Metastasen im Schädel" ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample> a fhir:Observation ;
+  fhir:id [ fhir:v "CTMRTAbdomenExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-abdomen"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-abdomen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CTMRTAbdomenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CTMRTAbdomenExample</b></p><a name=\"CTMRTAbdomenExample\"> </a><a name=\"hcCTMRTAbdomenExample\"> </a><a name=\"CTMRTAbdomenExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ct-mrt-abdomen.html\">CT/MRT Abdomen</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTAbdomen}\">ctMRTAbdomen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\">unauffällig</span></p><p><b>note</b>: Keine pathologischen Befunde im Abdomen</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ctMRTAbdomen" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "unauffaellig" ] ;
+       fhir:display [ fhir:v "unauffällig" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Keine pathologischen Befunde im Abdomen" ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample> a fhir:Observation ;
+  fhir:id [ fhir:v "PetCTExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/pet-ct"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/pet-ct>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PetCTExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PetCTExample</b></p><a name=\"PetCTExample\"> </a><a name=\"hcPetCTExample\"> </a><a name=\"PetCTExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-pet-ct.html\">PetCT</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes petCT}\">petCT</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\">unauffällig</span></p><p><b>note</b>: Keine pathologischen Befunde im PET-CT</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "petCT" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "unauffaellig" ] ;
+       fhir:display [ fhir:v "unauffällig" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Keine pathologischen Befunde im PET-CT" ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample> a fhir:Observation ;
+  fhir:id [ fhir:v "SkelettszintigraphieExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/skelettszintigraphie"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/skelettszintigraphie>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_SkelettszintigraphieExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation SkelettszintigraphieExample</b></p><a name=\"SkelettszintigraphieExample\"> </a><a name=\"hcSkelettszintigraphieExample\"> </a><a name=\"SkelettszintigraphieExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-skelettszintigraphie.html\">Skelettszintigraphie</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes skelettszintigraphie}\">skelettszintigraphie</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\">liegt nicht vor</span></p><p><b>note</b>: Keine Skelettmetastasen</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "skelettszintigraphie" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "liegtNichtVor" ] ;
+       fhir:display [ fhir:v "liegt nicht vor" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Keine Skelettmetastasen" ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample> a fhir:Observation ;
+  fhir:id [ fhir:v "LungenfunktionstestExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/lungenfunktionstest"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/lungenfunktionstest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_LungenfunktionstestExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation LungenfunktionstestExample</b></p><a name=\"LungenfunktionstestExample\"> </a><a name=\"hcLungenfunktionstestExample\"> </a><a name=\"LungenfunktionstestExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lungenfunktionstest.html\">Lungenfunktionstest</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes lungenfunktionstest}\">lungenfunktionstest</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\">liegt nicht vor</span></p><p><b>note</b>: Keine Lungenfunktionsstörungen</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "lungenfunktionstest" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "liegtNichtVor" ] ;
+       fhir:display [ fhir:v "liegt nicht vor" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Keine Lungenfunktionsstörungen" ]
+  ] ) . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample> a fhir:Observation ;
+  fhir:id [ fhir:v "FragestellungRadiologieFreitextExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-radiologie-freitext"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-radiologie-freitext>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FragestellungRadiologieFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FragestellungRadiologieFreitextExample</b></p><a name=\"FragestellungRadiologieFreitextExample\"> </a><a name=\"hcFragestellungRadiologieFreitextExample\"> </a><a name=\"FragestellungRadiologieFreitextExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fragestellung-radiologie-freitext.html\">FragestellungRadiologieFreitext</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes fragestellungRadiologieFreitext}\">fragestellungRadiologieFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Abklärung möglicher Metastasen im Abdomen</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "fragestellungRadiologieFreitext" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:string ;
+     fhir:v "Abklärung möglicher Metastasen im Abdomen"
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTExample> a fhir:Observation ;
+  fhir:id [ fhir:v "CTMRTExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-thorax"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-thorax>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CTMRTExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CTMRTExample</b></p><a name=\"CTMRTExample\"> </a><a name=\"hcCTMRTExample\"> </a><a name=\"CTMRTExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ct-mrt-thorax.html\">CT / MRT Thorax</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ct-mrt-thorax}\">ct-mrt-thorax</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes noch-nicht-eingelesen}\">noch nicht eingelesen</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ct-mrt-thorax" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "noch-nicht-eingelesen" ] ;
+       fhir:display [ fhir:v "noch nicht eingelesen" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/EKGExample> a fhir:Observation ;
+  fhir:id [ fhir:v "EKGExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ekg"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ekg>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_EKGExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation EKGExample</b></p><a name=\"EKGExample\"> </a><a name=\"hcEKGExample\"> </a><a name=\"EKGExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ekg.html\">EKG</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes nichtVorhanden}\">nicht vorhanden</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11524-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11524-6" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "nichtVorhanden" ] ;
+       fhir:display [ fhir:v "nicht vorhanden" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

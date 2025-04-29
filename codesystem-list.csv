@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs,0.1.0,draft,,TumorsituationCS,Tumorsituation CodeSystem,"Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.",

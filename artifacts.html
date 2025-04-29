@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="tb.html">tumorkonferenzen</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">TumorkonferenzenIDG - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://idg-rlp.de/fhir/tumorkonferenzen/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AnmeldeBundleMinimalFreitextLunge.html"
+                  title="StructureDefinition/AnmeldeBundleMinimalFreitextLunge">AnmeldeBundleMinimalFreitextLunge</a>
+            </td>
+            <td>
+<p>AnmeldeBundleMinimalFreitextLunge</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AnmeldeBundleMinimalFreitextProstata.html"
+                  title="StructureDefinition/AnmeldeBundleMinimalFreitextProstata">AnmeldeBundleMinimalFreitextProstata</a>
+            </td>
+            <td>
+<p>AnmeldeBundleMinimalFreitextProstata</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Anmelder.html"
+                  title="StructureDefinition/Anmelder">Anmelder</a>
+            </td>
+            <td>
+<p>Anmelder</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-bemerkung-freitext.html"
+                  title="StructureDefinition/bemerkung-freitext">BemerkungFreitext</a>
+            </td>
+            <td>
+<p>Freitext für allgemeine Bemerkungen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ct-mrt-thorax.html"
+                  title="StructureDefinition/ct-mrt-thorax">CT / MRT Thorax</a>
+            </td>
+            <td>
+<p>Abbildung der Verfügbarkeit von CT/MRT-Bildern des Thorax.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ct-mrt-abdomen.html"
+                  title="StructureDefinition/ct-mrt-abdomen">CT/MRT Abdomen</a>
+            </td>
+            <td>
+<p>Profil zur Dokumentation des CT/MRT Abdomen-Befunds.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ct-mrt-schaedel.html"
+                  title="StructureDefinition/ct-mrt-schaedel">CT/MRT Schädel</a>
+            </td>
+            <td>
+<p>Profil zur Dokumentation des CT/MRT Schädel-Befunds.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DiagnoseLungenTumorMinimal.html"
+                  title="StructureDefinition/DiagnoseLungenTumorMinimal">Diagnose Lungen-Tumor Minimal</a>
+            </td>
+            <td>
+<p>Diagnose Lungen-Tumor Minimal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DiagnoseFreitext.html"
+                  title="StructureDefinition/DiagnoseFreitext">DiagnoseFreitext</a>
+            </td>
+            <td>
+<p>DiagnoseFreitext</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ecog.html" title="StructureDefinition/ecog">ECOG</a>
+            </td>
+            <td>
+<p>Allgemeiner Leistungszustand: ECOG</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ekg.html" title="StructureDefinition/ekg">EKG</a>
+            </td>
+            <td>
+<p>Abbildung der Verfügbarkeit von EKG-Befunden.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Erstdiagnose.html"
+                  title="StructureDefinition/Erstdiagnose">Erstdiagnose</a>
+            </td>
+            <td>
+<p>Erstdiagnose</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-externe-bilder.html"
+                  title="StructureDefinition/externe-bilder">ExterneBilder</a>
+            </td>
+            <td>
+<p>Profil zur Dokumentation externer Bilder mit Antwortoptionen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-familienanamnese-drop-down.html"
+                  title="StructureDefinition/familienanamnese-drop-down">Familienanamnese DropDown</a>
+            </td>
+            <td>
+<p>Familienanamnese DropDown</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-FertilitaetsBehandlungEmpfohlen.html"
+                  title="StructureDefinition/FertilitaetsBehandlungEmpfohlen">FertilitaetsBehandlungEmpfohlen</a>
+            </td>
+            <td>
+<p>FertilitaetsBehandlungEmpfohlen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fragestellung-pathologie-freitext.html"
+                  title="StructureDefinition/fragestellung-pathologie-freitext">FragestellungPathologieFreitext</a>
+            </td>
+            <td>
+<p>Freitext für die spezifische Fragestellung an die Pathologie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fragestellung-radiologie-freitext.html"
+                  title="StructureDefinition/fragestellung-radiologie-freitext">FragestellungRadiologieFreitext</a>
+            </td>
+            <td>
+<p>Freitext für die spezifische Fragestellung an die Radiologie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fragestellung-tumorkonferenz-freitext.html"
+                  title="StructureDefinition/fragestellung-tumorkonferenz-freitext">FragestellungTumorkonferenzFreitext</a>
+            </td>
+            <td>
+<p>Freitext für die Fragestellung im Kontext einer Tumorkonferenz</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-FreitextObservation.html"
+                  title="StructureDefinition/FreitextObservation">FreitextObservation</a>
+            </td>
+            <td>
+<p>FreitextObservation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-gewuenschte-teilnehmer.html"
+                  title="StructureDefinition/gewuenschte-teilnehmer">Gewünschte Teilnehmer</a>
+            </td>
+            <td>
+<p>Profil zur Dokumentation der gewünschten Teilnehmer für ein medizinisches Treffen oder Konsil.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-HistologieMolPatFreitext.html"
+                  title="StructureDefinition/HistologieMolPatFreitext">HistologieMolPatFreitext</a>
+            </td>
+            <td>
+<p>HistologieMolPatFreitext</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-histologische-typisierung-lunge.html"
+                  title="StructureDefinition/histologische-typisierung-lunge">Histologische Typisierung Lunge</a>
+            </td>
+            <td>
+<p>Profil zur Dokumentation der histologischen Typisierung Lunge.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lungenfunktionstest.html"
+                  title="StructureDefinition/lungenfunktionstest">Lungenfunktionstest</a>
+            </td>
+            <td>
+<p>Profil zur Dokumentation des Lungenfunktionstest Befunds.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-medikamentoese-therapie-freitext.html"
+                  title="StructureDefinition/medikamentoese-therapie-freitext">MedikamentöseTherapieFreitext</a>
+            </td>
+            <td>
+<p>Freitext für die Beschreibung der medikamentösen Therapie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MinimalObservation.html"
+                  title="StructureDefinition/MinimalObservation">MinimalObservation</a>
+            </td>
+            <td>
+<p>MinimalObservation zur Festlegung gemeinsamer fixen Werten</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Nebendiagnose.html"
+                  title="StructureDefinition/Nebendiagnose">Nebendiagnose</a>
+            </td>
+            <td>
+<p>Nebendiagnose</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OperativeTherapieFreitext.html"
+                  title="StructureDefinition/OperativeTherapieFreitext">OperativeTherapieFreitext</a>
+            </td>
+            <td>
+<p>OperativeTherapieFreitext</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pet-ct.html"
+                  title="StructureDefinition/pet-ct">PetCT</a>
+            </td>
+            <td>
+<p>Profil zur Dokumentation des PetCT Befunds.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-praxis-pathologisches-institut-freitext.html"
+                  title="StructureDefinition/praxis-pathologisches-institut-freitext">PraxisPathologischesInstitutFreitext</a>
+            </td>
+            <td>
+<p>Freitext zur Dokumentation der Praxis oder des pathologischen Instituts des Patienten.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-psa-verlauf-freitext.html"
+                  title="StructureDefinition/psa-verlauf-freitext">PsaVerlaufFreitext</a>
+            </td>
+            <td>
+<p>Freitext für die Beschreibung des PSA-Verlaufs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-radiologie-bilder-freitext.html"
+                  title="StructureDefinition/radiologie-bilder-freitext">RadiologieBilderFreitext</a>
+            </td>
+            <td>
+<p>Freitext zur Beschreibung der an die Radiologie übermittelten Bilder</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-relevante-nebendiagnosen-freitext.html"
+                  title="StructureDefinition/relevante-nebendiagnosen-freitext">RelevanteNebendiagnosenFreitext</a>
+            </td>
+            <td>
+<p>Freitext für die Beschreibung relevanter Nebendiagnosen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-skelettszintigraphie.html"
+                  title="StructureDefinition/skelettszintigraphie">Skelettszintigraphie</a>
+            </td>
+            <td>
+<p>Profil zur Dokumentation des Skelettszintigraphie Befunds.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StrahlenTherapieFreitext.html"
+                  title="StructureDefinition/StrahlenTherapieFreitext">StrahlenTherapieFreitext</a>
+            </td>
+            <td>
+<p>StrahlenTherapieFreitext</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TNMFreitext.html"
+                  title="StructureDefinition/TNMFreitext">TNMFreitext</a>
+            </td>
+            <td>
+<p>TNMFreitext</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TumorPatient.html"
+                  title="StructureDefinition/TumorPatient">Tumor-Patient</a>
+            </td>
+            <td>
+<p>Patienten-Stammdaten</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumor-board-anmeldung.html"
+                  title="StructureDefinition/tumor-board-anmeldung">TumorBoardAnmeldung</a>
+            </td>
+            <td>
+<p>TumorBoardAnmeldung</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorErkrankung.html"
+                  title="StructureDefinition/tumorErkrankung">Tumorerkrankung</a>
+            </td>
+            <td>
+<p>Tumorerkrankung/Fall, dient als Klammer der Krebserkrankung</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorsituation.html"
+                  title="StructureDefinition/tumorsituation">Tumorsituation</a>
+            </td>
+            <td>
+<p>Profil zur Erfassung der Tumorsituation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-verlauf-freitext.html"
+                  title="StructureDefinition/verlauf-freitext">VerlaufFreitext</a>
+            </td>
+            <td>
+<p>Freitext für die Beschreibung des Verlaufs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-weitere-gewuenschte-teilnehmer-freitext.html"
+                  title="StructureDefinition/weitere-gewuenschte-teilnehmer-freitext">WeitereGewuenschteTeilnehmerFreitext</a>
+            </td>
+            <td>
+<p>Freitext für die Beschreibung weiterer gewünschter Teilnehmer, die nicht in den vordefinierten Optionen enthalten sind.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-befundstatust-vs.html" title="ValueSet/befundstatust-vs">Befundstatus ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-C34-BronchusLunge-Neoplasien.html"
+                  title="ValueSet/C34-BronchusLunge-Neoplasien">Bösartige Neubildungen von Bronchus und Lunge (ICD-10 C34.x)</a>
+            </td>
+            <td>
+<p>ICD-10-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-C34-BronchusLunge-ICDO3Topo.html"
+                  title="ValueSet/C34-BronchusLunge-ICDO3Topo">Bösartige Neubildungen von Bronchus und Lunge (ICD-O-3 Topographie C34.x)</a>
+            </td>
+            <td>
+<p>ICD-O-3 Topographie-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ecog-performance-status.html"
+                  title="ValueSet/ecog-performance-status">ECOG</a>
+            </td>
+            <td>
+<p>ECOG Performance Status (Level 0-5).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ja-nein-unbekannt-vs.html"
+                  title="ValueSet/ja-nein-unbekannt-vs">Expanded Yes/No Indicator ValueSet</a>
+            </td>
+            <td>
+<p>Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-externe-bilder-vs.html"
+                  title="ValueSet/externe-bilder-vs">Externe Bilder ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet für externe Bilder mit den Antwortoptionen: sind eingelesen, werden elektronisch übermittelt, werden per Post gesendet.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-gewuenschte-teilnehmer-vs.html"
+                  title="ValueSet/gewuenschte-teilnehmer-vs">Gewünschte Teilnehmer ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in einem medizinischen Kontext.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-histologische-typisierung-vs.html"
+                  title="ValueSet/histologische-typisierung-vs">Histologische Typisierung ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet für die histologische Typisierung mit den Antwortoptionen: Unbekannt, SCLC, NSCLC, Sonstige.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ja-nein-beratung-vs.html"
+                  title="ValueSet/ja-nein-beratung-vs">Ja, Nein, Beratung schon erfolgt ValueSet</a>
+            </td>
+            <td>
+<p>Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolgt.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-pos-neg-nask-vs.html" title="ValueSet/pos-neg-nask-vs">PosNegNask</a>
+            </td>
+            <td>
+<p>PosNegNask</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-StatusBildbefundVS.html"
+                  title="ValueSet/StatusBildbefundVS">StatusBildbefundVS</a>
+            </td>
+            <td>
+<p>Status Bildbefund ValueSet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-tumorsituation-vs.html"
+                  title="ValueSet/tumorsituation-vs">Tumorsituation ValueSet</a>
+            </td>
+            <td>
+<p>ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-tumorsituation-cs.html"
+                  title="CodeSystem/tumorsituation-cs">Tumorsituation CodeSystem</a>
+            </td>
+            <td>
+<p>Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-AllgemeinerLeistungszustandKarnofskyExample.html"
+                  title="Observation/AllgemeinerLeistungszustandKarnofskyExample">AllgemeinerLeistungszustandKarnofskyExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html"
+                  title="Bundle/AnmeldeBundleMinimalFreitextLunge-Example">AnmeldeBundleMinimalFreitextLunge Example</a>
+            </td>
+            <td>
+<p>Beispiel für ein minimalen Anmeldebundle für Lungenpatienten</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-AnmeldeBundleMinimalFreitextProstata-Example.html"
+                  title="Bundle/AnmeldeBundleMinimalFreitextProstata-Example">AnmeldeBundleMinimalFreitextProstata Example</a>
+            </td>
+            <td>
+<p>Beispiel für ein minimalen Anmeldebundle für Prostatapatienten</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BefalleneLymphknotenExample.html"
+                  title="Observation/BefalleneLymphknotenExample">BefalleneLymphknotenExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BefalleneSentinelLymphknotenExample.html"
+                  title="Observation/BefalleneSentinelLymphknotenExample">BefalleneSentinelLymphknotenExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ICD10GM-DiagnoseExample.html"
+                  title="Condition/ICD10GM-DiagnoseExample">Beispiel einer ICD-10-GM-Diagnose</a>
+            </td>
+            <td>
+<p>Beispiel einer ICD-10-GM-Diagnose</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-AnmelderExample.html"
+                  title="Practitioner/AnmelderExample">Beispiel eines Anmelders</a>
+            </td>
+            <td>
+<p>Person, die den Patienten anmeldet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-Nebendiagnose-Example.html"
+                  title="Condition/Nebendiagnose-Example">Beispiel für eine Nebendiagnose</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ECOGExample.html" title="Observation/ECOGExample">ECOGExample</a>
+            </td>
+            <td>
+<p>Beispielinstanz einer Observation welche einen ECOG Wert enthält.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-GradingExample.html"
+                  title="Observation/GradingExample">GradingExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TNM-Example.html" title="Observation/TNM-Example">TNM-Example</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TNM-M-Example.html" title="Observation/TNM-M-Example">TNM-M-Example</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TNM-N-Example.html" title="Observation/TNM-N-Example">TNM-N-Example</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TNM-T-Example.html" title="Observation/TNM-T-Example">TNM-T-Example</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EpisodeOfCare-TumorErkrankungExample.html"
+                  title="EpisodeOfCare/TumorErkrankungExample">TumorErkrankungExample</a>
+            </td>
+            <td>
+<p>Ein Beispiel für die Episode einer Tumorerkrankung.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-TumorPatient-example-1.html"
+                  title="Patient/TumorPatient-example-1">TumorPatient-example-1</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-UntersuchteLymphknotenExample.html"
+                  title="Observation/UntersuchteLymphknotenExample">UntersuchteLymphknotenExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-UntersuchteSentinelLymphknotenExample.html"
+                  title="Observation/UntersuchteSentinelLymphknotenExample">UntersuchteSentinelLymphknotenExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 29, 2025 08:55+0200">2025-04-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

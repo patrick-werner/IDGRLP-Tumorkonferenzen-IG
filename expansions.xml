@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="82aaf52a-7a77-4460-8a4a-c5d054b1d822"/>
+  <meta>
+    <lastUpdated value="2025-04-29T08:55:30.173+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-ICDO3Topo"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 International Classification of Diseases for Oncology, version 3. version2000</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem International Classification of Diseases for Oncology, version 3. version2000</p>
+            <p>This value set contains at least 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-ICDO3Topo"/>
+        <version value="0.1.0"/>
+        <name value="C34_BronchusLunge_ICDO3TopoVS"/>
+        <title value="Bösartige Neubildungen von Bronchus und Lunge (ICD-O-3 Topographie C34.x)"/>
+        <status value="draft"/>
+        <date value="2025-04-29T08:55:06+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:4cf8fa6d-3aba-4a8d-9f15-ebfa48390f64"/>
+          <timestamp value="2025-04-29T06:57:45.325Z"/>
+          <total value="0"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/icd-o-3|2000"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
+            <p>This value set contains 7 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA9622-7"> </a>  
+                  <a href="https://loinc.org/LA9622-7/">LA9622-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Fully active, able to carry on all pre-disease performance without restriction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA9623-5"> </a>  
+                  <a href="https://loinc.org/LA9623-5/">LA9623-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA9624-3"> </a>  
+                  <a href="https://loinc.org/LA9624-3/">LA9624-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Ambulatory and capable of all selfcare but unable to carry out any work activities. Up and about more than 50% of waking hours</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA9625-0"> </a>  
+                  <a href="https://loinc.org/LA9625-0/">LA9625-0</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Capable of only limited selfcare, confined to bed or chair more than 50% of waking hours</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA9626-8"> </a>  
+                  <a href="https://loinc.org/LA9626-8/">LA9626-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Completely disabled. Cannot carry on any selfcare. Totally confined to bed or chair</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA9627-6"> </a>  
+                  <a href="https://loinc.org/LA9627-6/">LA9627-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Dead</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-LA4489-6"> </a>  
+                  <a href="https://loinc.org/LA4489-6/">LA4489-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status"/>
+        <version value="0.1.0"/>
+        <name value="ECOGPerformanceStatusVS"/>
+        <title value="ECOG"/>
+        <status value="draft"/>
+        <date value="2025-04-29T08:55:06+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:fb985bee-910c-410c-99b7-5c78f8879ba3"/>
+          <timestamp value="2025-04-29T08:57:48+02:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA9622-7"/>
+            <display value="Fully active, able to carry on all pre-disease performance without restriction"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA9623-5"/>
+            <display value="Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA9624-3"/>
+            <display value="Ambulatory and capable of all selfcare but unable to carry out any work activities. Up and about more than 50% of waking hours"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA9625-0"/>
+            <display value="Capable of only limited selfcare, confined to bed or chair more than 50% of waking hours"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA9626-8"/>
+            <display value="Completely disabled. Cannot carry on any selfcare. Totally confined to bed or chair"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA9627-6"/>
+            <display value="Dead"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA4489-6"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-tumorsituation-cs.html">codesystem Tumorsituation CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs-ED"> </a>  
+                  <a href="CodeSystem-tumorsituation-cs.html#tumorsituation-cs-ED">ED</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</td>
+                <td>Erstdiagnose</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs-LR"> </a>  
+                  <a href="CodeSystem-tumorsituation-cs.html#tumorsituation-cs-LR">LR</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</td>
+                <td>Lokalregionales Rezidiv</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs-M"> </a>  
+                  <a href="CodeSystem-tumorsituation-cs.html#tumorsituation-cs-M">M</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</td>
+                <td>Metastasierung</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs-TV"> </a>  
+                  <a href="CodeSystem-tumorsituation-cs.html#tumorsituation-cs-TV">TV</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</td>
+                <td>Therapieverlauf</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs-S"> </a>  
+                  <a href="CodeSystem-tumorsituation-cs.html#tumorsituation-cs-S">S</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</td>
+                <td>Sonstige</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs"/>
+        <version value="0.1.0"/>
+        <name value="TumorsituationVS"/>
+        <title value="Tumorsituation ValueSet"/>
+        <status value="draft"/>
+        <date value="2025-04-29T08:55:06+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:12701dbd-bac9-4d6b-a096-101c1e08d7f6"/>
+          <timestamp value="2025-04-29T08:57:54+02:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"/>
+            <code value="ED"/>
+            <display value="Erstdiagnose"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"/>
+            <code value="LR"/>
+            <display value="Lokalregionales Rezidiv"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"/>
+            <code value="M"/>
+            <display value="Metastasierung"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"/>
+            <code value="TV"/>
+            <display value="Therapieverlauf"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"/>
+            <code value="S"/>
+            <display value="Sonstige"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

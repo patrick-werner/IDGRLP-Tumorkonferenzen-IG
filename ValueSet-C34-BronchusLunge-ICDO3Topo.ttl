@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-ICDO3Topo> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "C34-BronchusLunge-ICDO3Topo"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet C34-BronchusLunge-ICDO3Topo</b></p><a name=\"C34-BronchusLunge-ICDO3Topo\"> </a><a name=\"hcC34-BronchusLunge-ICDO3Topo\"> </a><a name=\"C34-BronchusLunge-ICDO3Topo-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-icd-o-3.html\"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C34.0</td><td>Hauptbronchus</td></tr><tr><td>C34.1</td><td>Oberlappen (Bronchus)</td></tr><tr><td>C34.2</td><td>Mittellappen (Bronchus)</td></tr><tr><td>C34.3</td><td>Unterlappen (Bronchus)</td></tr><tr><td>C34.8</td><td>Bronchus und Lunge, mehrere Teilbereiche überlappend</td></tr><tr><td>C34.9</td><td>Bronchus oder Lunge, nicht näher bezeichnet</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-ICDO3Topo"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "C34_BronchusLunge_ICDO3TopoVS"] ; # 
+  fhir:title [ fhir:v "Bösartige Neubildungen von Bronchus und Lunge (ICD-O-3 Topographie C34.x)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-04-29T08:55:06+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.idg-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@idg-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ICD-O-3 Topographie-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "C34.0" ] ;
+         fhir:display [ fhir:v "Hauptbronchus" ]
+       ] [
+         fhir:code [ fhir:v "C34.1" ] ;
+         fhir:display [ fhir:v "Oberlappen (Bronchus)" ]
+       ] [
+         fhir:code [ fhir:v "C34.2" ] ;
+         fhir:display [ fhir:v "Mittellappen (Bronchus)" ]
+       ] [
+         fhir:code [ fhir:v "C34.3" ] ;
+         fhir:display [ fhir:v "Unterlappen (Bronchus)" ]
+       ] [
+         fhir:code [ fhir:v "C34.8" ] ;
+         fhir:display [ fhir:v "Bronchus und Lunge, mehrere Teilbereiche überlappend" ]
+       ] [
+         fhir:code [ fhir:v "C34.9" ] ;
+         fhir:display [ fhir:v "Bronchus oder Lunge, nicht näher bezeichnet" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
